@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using System.Security.Claims
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -18,25 +19,10 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oleo+Script:400,700|Lobster' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-controller="Home" asp-action="Index" class="navbar-brand">BandManagr</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-                </ul>
-                @await Html.PartialAsync("_LoginPartial")
-            </div>
-        </div>
-    </div>
+<div class="sidebar">
+   
+
+</div>
     <div class="container body-content">
         @RenderBody()
 
@@ -44,7 +30,7 @@
     </div>
     <footer>
         <span>
-            <span>&copy; 2016 - BandManagr </span>|<span> <a asp-controller="Home" asp-action="About">About</a> </span>|<span><a asp-controller="Home" asp-action="Contact">Contact</a></span>
+            <span>&copy; 2016 - BandManagr </span><span> <a asp-controller="Home" asp-action="About">About</a> </span><span><a asp-controller="Home" asp-action="Contact">Contact</a></span>
         </span>
     </footer>
 

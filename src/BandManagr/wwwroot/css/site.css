@@ -1,4 +1,4 @@
-﻿@font-face {
+﻿/*@font-face {
     font-family: 'Glyphter';
     src: url('../fonts/Glyphter.eot');
     src: url('../fonts/Glyphter.eot?#iefix') format('embedded-opentype'), url('../fonts/Glyphter.woff') format('woff'), url('../fonts/Glyphter.ttf') format('truetype'), url('../fonts/Glyphter.svg#Glyphter') format('svg');
@@ -18,7 +18,7 @@
 
 .icon-bm-logo:before {
     content: '\0042';
-}
+}*/
 
 .orange {
     color: #ff8713;
@@ -73,6 +73,7 @@ footer {
     font: inherit;
     font-size: 1em;
     line-height: 2em;
+    color: white;
 }
 
     footer span {
@@ -86,10 +87,8 @@ footer {
 }
 
 /* Set widths on the form inputs since otherwise they're 100% wide */
-input,
-select,
-textarea {
-    max-width: 280px;
+input {
+    width: 400px;
 }
 
 /* Carousel */
@@ -111,11 +110,43 @@ textarea {
 
 /* Login page */
 .login-wrapper {
-    margin-top: 20%;
+    margin-top: 25%;
 }
 
 .brand-title {
     font-family: 'Oleo Script', cursive;
     font-size: 6em;
     text-align: center;
+    margin: auto;
 }
+
+
+
+button.login-btn {
+    background-color: #ff8713;
+    color: white;
+    padding: 0.5em 1.5em;
+    border: 1px #cd6e12;
+    border-radius: 5px;
+}
+
+button.login-btn:hover, button.login-btn:active {
+    background-color: #cd6e12;
+    color: white;
+}
+
+#login-page input{
+    max-width: 80%;
+}
+
+button.facebook-btn {
+    background-color: #3a5795;
+    color: white;
+    margin-top: 2em;
+    padding: 0.5em 1.5em;
+    border: 1px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
