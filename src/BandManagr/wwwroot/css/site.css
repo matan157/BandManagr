@@ -127,6 +127,7 @@ button.login-btn {
     color: white;
     padding: 0.5em 1.5em;
     border: 1px #cd6e12;
+    -ms-border-radius: 5px;
     border-radius: 5px;
 }
 
