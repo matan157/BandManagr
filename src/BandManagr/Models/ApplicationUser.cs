@@ -11,5 +11,10 @@ namespace BandManagr.Models
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
+
+        public string GetName()
+        {
+            return FirstName + " " + LastName;
+        }
     }
 }

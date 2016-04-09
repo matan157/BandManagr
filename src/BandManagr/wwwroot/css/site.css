@@ -151,3 +151,10 @@ button.facebook-btn {
 }
 
 
+.sidebar {
+    width: 15%;
+    background-color: lightgray;
+    height: 100%;
+    background-size: cover;
+    padding: 15px;
+}
