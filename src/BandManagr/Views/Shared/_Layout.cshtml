@@ -1,8 +1,10 @@
 ﻿@using System.Security.Claims
-
+@model BandManagr.Models.ApplicationUser
 @{
     String text;
     text = User.IsSignedIn() ? User.GetUserName() : "Please sign in.";
+    model => model.FirstName;
+    
 }
 <!DOCTYPE html>
 <html>
@@ -25,7 +27,7 @@
 </head>
 <body>
     <div class="sidebar">
-        <h4> @text </h4>
+        <h4> @Html.DisplayName(model.GetName())) </h4>
 
     </div>
     <div class="container body-content">
